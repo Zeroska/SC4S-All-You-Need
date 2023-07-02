@@ -13,7 +13,7 @@ services:
        - target: 514
          published: 514
          protocol: udp
-       - target: 601
+       - target: 601 # If this port is taken then you can change to other port
          published: 601
          protocol: tcp
        - target: 6514
@@ -24,10 +24,6 @@ services:
     volumes:
       - ./opt/sc4s/local:/etc/syslog-ng/conf.d/local:z
       - ./splunk-sc4s-var:/var/lib/syslog-ng
-# Uncomment the following line if local disk archiving is desired
-#     - /opt/sc4s/archive:/var/lib/syslog-ng/archive:z
-# Map location of TLS custom TLS
-#     - /opt/sc4s/tls:/etc/syslog-ng/tls:z
 
 volumes:
   splunk-sc4s-var:
