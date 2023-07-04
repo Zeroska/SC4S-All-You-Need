@@ -1,7 +1,9 @@
-// <14>Jul  3 02:39:18 FILESERVER.madero.eolianenergy.com Microsoft-Windows-Security-Auditing[740]: 
+// Syslog Header <14>Jul  3 02:39:18 example.com Microsoft-Windows-Security-Auditing[740]: 
+
+// Windows Event Log Json
 {
     "EventTime": "2023-07-03 02:39:18",
-    "Hostname": "FILESERVER.madero.eolianenergy.com",
+    "Hostname": "example.com",
     "Keywords": -9214364837600034816,
     "EventType": "AUDIT_SUCCESS",
     "SeverityValue": 2,
@@ -17,7 +19,7 @@
     "ProcessID": 740,
     "ThreadID": 14228,
     "Channel": "Security",
-    "Message": "A logon was attempted using explicit credentials.\r\n\r\nSubject:\r\n\tSecurity ID:\t\tS-1-0-0\r\n\tAccount Name:\t\t-\r\n\tAccount Domain:\t\t-\r\n\tLogon ID:\t\t0x9446\r\n\tLogon GUID:\t\t{00000000-0000-0000-0000-000000000000}\r\n\r\nAccount Whose Credentials Were Used:\r\n\tAccount Name:\t\tmdvault.service\r\n\tAccount Domain:\t\t\r\n\tLogon GUID:\t\t{00000000-0000-0000-0000-000000000000}\r\n\r\nTarget Server:\r\n\tTarget Server Name:\tAD1.madero.eolianenergy.com\r\n\tAdditional Information:\tAD1.madero.eolianenergy.com\r\n\r\nProcess Information:\r\n\tProcess ID:\t\t0x1784\r\n\tProcess Name:\t\tC:\\Program Files\\OPSWAT\\MetaDefender Vault\\Services\\opswat.vault.processor.service.exe\r\n\r\nNetwork Information:\r\n\tNetwork Address:\t-\r\n\tPort:\t\t\t-\r\n\r\nThis event is generated when a process attempts to log on an account by explicitly specifying that account’s credentials.  This most commonly occurs in batch-type configurations such as scheduled tasks, or when using the RUNAS command.",
+    "Message": "",
     "Category": "Logon",
     "Opcode": "Info",
     "SubjectUserSid": "S-1-0-0",
@@ -27,9 +29,9 @@
     "LogonGuid": "{00000000-0000-0000-0000-000000000000}",
     "TargetUserName": "mdvault.service",
     "TargetLogonGuid": "{00000000-0000-0000-0000-000000000000}",
-    "TargetServerName": "AD1.madero.eolianenergy.com",
-    "TargetInfo": "AD1.madero.eolianenergy.com",
-    "ProcessName": "C:\\Program Files\\OPSWAT\\MetaDefender Vault\\Services\\opswat.vault.processor.service.exe",
+    "TargetServerName": "example.com",
+    "TargetInfo": "example.com",
+    "ProcessName": ".service.exe",
     "IpAddress": "-",
     "IpPort": "-",
     "EventReceivedTime": "2023-07-03 02:39:19",
@@ -37,27 +39,3 @@
     "SourceModuleType": "im_msvistalog"
 }
 
-
-
-
-A logon was attempted using explicit credentials.\r\n\r\n
-Subject:\r\n\t
-Security ID:\t\tS-1-0-0\r\n\t
-Account Name:\t\t-\r\n\t
-Account Domain:\t\t-\r\n\t
-Logon ID:\t\t0x9446\r\n\t
-Logon GUID:\t\t{00000000-0000-0000-0000-000000000000}\r\n\r\n
-Account Whose Credentials Were Used:\r\n\t
-Account Name:\t\tmdvault.service\r\n\t
-Account Domain:\t\t\r\n\t
-Logon GUID:\t\t{00000000-0000-0000-0000-000000000000}\r\n\r\n
-Target Server:\r\n\t
-Target Server Name:\tAD1.madero.eolianenergy.com\r\n\t
-Additional Information:\tAD1.madero.eolianenergy.com\r\n\r\n
-Process Information:\r\n\t
-Process ID:\t\t0x1784\r\n\t
-Process Name:\t\tC:\\Program Files\\OPSWAT\\MetaDefender Vault\\Services\\opswat.vault.processor.service.exe\r\n\r\n
-Network Information:\r\n\t
-Network Address:\t-\r\n\t
-Port:\t\t\t-\r\n\r\n
-This event is generated when a process attempts to log on an account by explicitly specifying that account’s credentials.  This most commonly occurs in batch-type configurations such as scheduled tasks, or when using the RUNAS command.",
