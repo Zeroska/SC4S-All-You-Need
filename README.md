@@ -12,8 +12,12 @@ Set the variable SC4S_SOURCE_STORE_RAWMSG=yes and look for the RAWMSG field in S
 
 ## Develop log path
 
+What is log path in SC4S
+
 /opt/sc4s/local/config/log-paths
 
 ## Syslog-ng
 
-Avoid UDP. syslog-ng will drop packets and doesn't multithread udp packets. TCP it can thread better.
+Here you can find the reference which network protocol you should use UDP or TCP  
+- https://download3.vmware.com/vcat/vmw-vcloud-architecture-toolkit-spv1-webworks/index.html#page/Cloud%20Operations%20and%20Management/Architecting%20a%20vRealize%20Log%20Insight%20Solution/Architecting%20a%20vRealize%20Log%20Insight%20Solution.2.20.html
+- https://success.alienvault.com/s/article/Should-I-use-TCP-or-UDP-for-log-forwarding 
