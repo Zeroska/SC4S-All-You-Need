@@ -7,3 +7,7 @@ https://splunk.github.io/splunk-connect-for-syslog/main/gettingstarted/docker-co
 ```bash
 sudo docker volume create splunk-sc4s-var
 ```
+
+After you create a SC4S container then you could change some of varibles in env_file as usual 
+
+
