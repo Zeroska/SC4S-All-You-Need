@@ -8,6 +8,6 @@ Refs:
 
 ## How to create a Parser/Filter 
 
-My Blog on  how to create a Parser and Filter
+My Blog on  how to create a Parser and Filter, it will explain more about how to create it and what is my use case for the configuration 
 
 https://zeroska.gitbook.io/zeroska/computer-and-technology/splunk-learning-experience/sc4s-custom-filter-for-windows-event-log-in-syslog-format
